@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Tetris" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Tetris" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="../SFML250/include" />
+				</Compiler>
+				<Linker>
+					<Add library="../SFML250/lib/libsfml-graphics.a" />
+					<Add library="../SFML250/lib/libsfml-window.a" />
+					<Add library="../SFML250/lib/libsfml-system.a" />
+					<Add directory="../SFML250/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Tetris" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="../SFML250/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="../SFML250/lib/libsfml-graphics.a" />
+					<Add library="../SFML250/lib/libsfml-window.a" />
+					<Add library="../SFML250/lib/libsfml-system.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="AbstractEntity.cpp" />
+		<Unit filename="AbstractEntity.hh" />
+		<Unit filename="Game.cpp" />
+		<Unit filename="Game.hh" />
+		<Unit filename="ITetro.cpp" />
+		<Unit filename="ITetro.hh" />
+		<Unit filename="JTetro.cpp" />
+		<Unit filename="JTetro.hh" />
+		<Unit filename="LTetro.cpp" />
+		<Unit filename="LTetro.hh" />
+		<Unit filename="OTetro.cpp" />
+		<Unit filename="OTetro.hh" />
+		<Unit filename="Piece.cpp" />
+		<Unit filename="Piece.hh" />
+		<Unit filename="PieceFactory.cpp" />
+		<Unit filename="PieceFactory.hh" />
+		<Unit filename="STetro.cpp" />
+		<Unit filename="STetro.hh" />
+		<Unit filename="TTetro.cpp" />
+		<Unit filename="TTetro.hh" />
+		<Unit filename="ZTetro.cpp" />
+		<Unit filename="ZTetro.hh" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
