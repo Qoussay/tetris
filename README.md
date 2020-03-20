@@ -3,6 +3,8 @@
 
 It is a small project I am working on with my brother
 
+I am using Visual Studio Code
+
 My problem is with the audio. I run the game with three commands :
 
     make clean
